@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico 3 - Tailwind CSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="/img/icon.png">
+</head>
+
+<body class="bg-gray-950 bg-[url('img/background.jpeg')] bg-cover bg-center text-white font-sans">
+
+    <header
+        class="flex flex-col justify-center items-center bg-gray-800/90 border-b border-gray-700 text-white text-center py-6">
+        <h1 class="text-4xl font-bold">Trabajo Práctico N°3 - Prácticas Profesionalizantes 1</h1>
+        <img class="w-72 mt-4" src="/img/logo.png" alt="logo">
+    </header>
+
+    <main class="max-w-6xl mx-auto p-8 space-y-8">
+
+        <section class="bg-gray-800/90 shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-3xl font-bold mb-4">Uso Práctico</h2>
+            <p class="mb-4 text-lg">Tailwind CSS puede utilizarse de varias maneras según el tamaño y las necesidades del proyecto.
+                Su flexibilidad permite integrarlo tanto en proyectos pequeños como en aplicaciones web complejas.</p>
+
+            <h3 class="text-2xl font-semibold text-sky-400 mb-2">1. Instalación rápida mediante CDN</h3>
+            <p class="mb-2 text-lg">Ideal para <span class="italic text-gray-300">demostraciones o proyectos pequeños</span> que no requieren personalización avanzada.
+                Solo se necesita incluir el siguiente enlace dentro del <code class="bg-gray-900 text-sky-300 px-2 py-1 rounded">head</code> del archivo HTML:</p>
+            <div class="bg-gray-900 p-4 rounded-lg font-mono text-sm text-gray-100 mb-4">
+                <code>&lt;link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/dist/tailwind.min.css" rel="stylesheet"&gt;</code>
+            </div>
+            <p class="text-lg mb-6">Este método permite comenzar a usar Tailwind de inmediato, aunque no permite personalización del archivo
+                <code class="text-sky-300">tailwind.config.js</code>.</p>
+
+            <h3 class="text-2xl font-semibold text-sky-400 mb-2">2. Instalación mediante npm (recomendada)</h3>
+            <p class="mb-2 text-lg">Ideal para proyectos profesionales. Permite personalizar completamente el diseño, optimizar el CSS y usar herramientas modernas.</p>
+            <div class="bg-gray-900 p-4 rounded-lg font-mono text-sm text-gray-100 mb-4 space-y-2">
+                <code>npm install -D tailwindcss postcss autoprefixer</code><br>
+                <code>npx tailwindcss init -p</code><br>
+                <code>content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"]</code><br>
+                <code>@tailwind base;<br>@tailwind components;<br>@tailwind utilities;</code>
+            </div>
+
+            <h3 class="text-2xl font-semibold text-sky-400 mb-2">3. Instalación en frameworks populares</h3>
+            <ul class="list-disc pl-6 text-lg space-y-2">
+                <li><span class="font-semibold">React (Vite o CRA):</span> instalación igual que con npm, agregando el CSS principal en <code class="text-sky-300">index.css</code>.</li>
+                <li><span class="font-semibold">Next.js:</span> Tailwind se configura automáticamente con <code class="text-sky-300">postcss.config.js</code>.</li>
+                <li><span class="font-semibold">Vue/Nuxt:</span> agregar las directivas <code class="text-sky-300">@tailwind</code> en el CSS global.</li>
+                <li><span class="font-semibold">Angular:</span> se integra mediante PostCSS en el archivo <code class="text-sky-300">angular.json</code>.</li>
+            </ul>
+
+            <p class="mt-4 text-lg">En resumen, Tailwind CSS ofrece distintas formas de implementación: desde la inclusión rápida por CDN hasta configuraciones profesionales con npm y frameworks modernos, garantizando flexibilidad, eficiencia y escalabilidad.</p>
+        </section>
+
+        <div class="flex justify-center items-center">
+            <a href="/"
+                class="mt-4 bg-sky-400 text-white font-semibold px-4 py-2 rounded-lg hover:bg-sky-400 hover:scale-105 cursor-pointer transition">Volver</a>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-800/90 text-white text-center py-4 mt-10 border-t border-gray-700">
+        <p>© 2025 Ibaceta Agustin, Jaled Facundo, Caballero Dayana</p>
+         <p>CENT 18</p>
+    </footer>
+
+</body>
+
+</html>

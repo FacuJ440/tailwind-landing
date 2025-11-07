@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico 3 - Tailwind CSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="/img/icon.png">
+</head>
+
+<body class="bg-gray-950 bg-[url('img/background.jpeg')] bg-cover bg-center text-white font-sans">
+
+    <header
+        class="flex flex-col justify-center items-center bg-gray-800/90 border-b border-gray-700 text-white text-center py-6">
+        <h1 class="text-4xl font-bold">Trabajo Práctico N°3 - Prácticas Profesionalizantes 1</h1>
+        <img class="w-72 mt-4" src="/img/logo.png" alt="logo">
+    </header>
+
+    <main class="max-w-6xl mx-auto p-8 space-y-8">
+
+        <section class="bg-gray-800/90 shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-3xl font-bold mb-6 text-center">⚙️ Principales Utilidades de Tailwind CSS</h2>
+
+            <div class="space-y-6 text-lg leading-relaxed">
+
+                <div>
+                    <p class="font-semibold text-sky-400">🎨 Colores de fondo y texto</p>
+                    <ul class="list-disc pl-6">
+                        <li><span class="font-semibold">Fondo:</span> <code class="text-sky-300">bg-color</code> → <code>bg-blue-500</code>, <code>bg-gray-200</code>, <code>bg-red-600</code></li>
+                        <li><span class="font-semibold">Texto:</span> <code class="text-sky-300">text-color</code> → <code>text-white</code>, <code>text-gray-700</code>, <code>text-blue-500</code></li>
+                        <li><span class="font-semibold">Borde:</span> <code class="text-sky-300">border-color</code> → <code>border</code>, <code>border-gray-400</code>, <code>border-blue-500</code></li>
+                    </ul>
+                    <p class="text-gray-300 mt-1">👉 Uso: Dar color y contraste al contenido.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">📏 Espaciado (margen y relleno)</p>
+                    <ul class="list-disc pl-6">
+                        <li><span class="font-semibold">Margen:</span> <code>m, mt, mb, ml, mr, mx, my</code> → <code>m-4</code>, <code>mt-2</code></li>
+                        <li><span class="font-semibold">Relleno (Padding):</span> <code>p, pt, pb, pl, pr, px, py</code> → <code>p-6</code>, <code>px-4</code>, <code>py-2</code></li>
+                    </ul>
+                    <p class="text-gray-300 mt-1">👉 Uso: Separar y organizar elementos visualmente.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">🧱 Tamaños</p>
+                    <ul class="list-disc pl-6">
+                        <li><span class="font-semibold">Ancho:</span> <code>w-1/2</code>, <code>w-full</code>, <code>w-64</code></li>
+                        <li><span class="font-semibold">Alto:</span> <code>h-screen</code>, <code>h-32</code>, <code>h-auto</code></li>
+                        <li><span class="font-semibold">Máximos:</span> <code>max-w-</code>, <code>max-h-</code></li>
+                    </ul>
+                    <p class="text-gray-300 mt-1">👉 Uso: Controlar proporciones y distribución de contenido.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">🧭 Alineación y posición</p>
+                    <ul class="list-disc pl-6">
+                        <li><span class="font-semibold">Texto:</span> <code>text-left</code>, <code>text-center</code>, <code>text-right</code></li>
+                        <li><span class="font-semibold">Flex / Grid:</span> <code>flex</code>, <code>grid</code>, <code>justify-center</code>, <code>items-center</code></li>
+                        <li><span class="font-semibold">Posición:</span> <code>relative</code>, <code>absolute</code>, <code>top-0</code>, <code>left-0</code></li>
+                    </ul>
+                    <p class="text-gray-300 mt-1">👉 Uso: Centrar, distribuir y ubicar elementos fácilmente.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">🔤 Tipografía</p>
+                    <ul class="list-disc pl-6">
+                        <li><span class="font-semibold">Tamaño:</span> <code>text-sm</code>, <code>text-lg</code>, <code>text-2xl</code></li>
+                        <li><span class="font-semibold">Peso:</span> <code>font-light</code>, <code>font-semibold</code>, <code>font-bold</code></li>
+                        <li><span class="font-semibold">Estilo:</span> <code>italic</code>, <code>not-italic</code></li>
+                        <li><span class="font-semibold">Espaciado:</span> <code>tracking-wide</code>, <code>leading-relaxed</code></li>
+                    </ul>
+                    <p class="text-gray-300 mt-1">👉 Uso: Dar jerarquía y legibilidad al texto.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">🧍‍♂️ Bordes y esquinas</p>
+                    <ul class="list-disc pl-6">
+                        <li><span class="font-semibold">Borde:</span> <code>border</code>, <code>border-2</code>, <code>border-b</code>, <code>border-t-4</code></li>
+                        <li><span class="font-semibold">Esquinas:</span> <code>rounded</code>, <code>rounded-lg</code>, <code>rounded-full</code></li>
+                        <li><span class="font-semibold">Sombras:</span> <code>shadow</code>, <code>shadow-md</code>, <code>shadow-lg</code></li>
+                    </ul>
+                    <p class="text-gray-300 mt-1">👉 Uso: Agregar contornos, destacar cajas o botones.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">🧩 Fondos y degradados</p>
+                    <ul class="list-disc pl-6">
+                        <li><code>bg-blue-500</code></li>
+                        <li><code>bg-gradient-to-r from-blue-400 to-green-400</code></li>
+                        <li><code>bg-cover</code>, <code>bg-center</code>, <code>bg-no-repeat</code></li>
+                    </ul>
+                    <p class="text-gray-300 mt-1">👉 Uso: Crear fondos atractivos y visualmente modernos.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">📱 Responsividad</p>
+                    <p>Usa prefijos según el tamaño de pantalla:</p>
+                    <ul class="list-disc pl-6">
+                        <li><code>sm:</code> (≥640px)</li>
+                        <li><code>md:</code> (≥768px)</li>
+                        <li><code>lg:</code> (≥1024px)</li>
+                        <li><code>xl:</code> (≥1280px)</li>
+                    </ul>
+                    <div class="bg-gray-900 p-4 rounded-lg font-mono text-sm text-gray-100 mt-2">
+                        &lt;div class="text-sm md:text-lg lg:text-2xl"&gt;Texto adaptable&lt;/div&gt;
+                    </div>
+                    <p class="text-gray-300 mt-1">👉 Uso: Cambiar estilos según el dispositivo.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">🎛️ Estados y efectos</p>
+                    <ul class="list-disc pl-6">
+                        <li><code>hover:bg-blue-600</code>, <code>hover:text-white</code></li>
+                        <li><code>focus:ring-2</code>, <code>focus:outline-none</code></li>
+                        <li><code>active:scale-95</code></li>
+                        <li><code>transition</code>, <code>duration-300</code>, <code>ease-in-out</code></li>
+                        <li><code>hover:scale-105</code>, <code>rotate-45</code></li>
+                    </ul>
+                    <p class="text-gray-300 mt-1">👉 Uso: Añadir interactividad y animaciones suaves.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">⚡ Display y visibilidad</p>
+                    <ul class="list-disc pl-6">
+                        <li><code>block</code>, <code>inline-block</code>, <code>inline</code>, <code>flex</code>, <code>grid</code>, <code>hidden</code></li>
+                        <li><code>visible</code>, <code>invisible</code></li>
+                    </ul>
+                    <p class="text-gray-300 mt-1">👉 Uso: Controlar cómo se muestran u ocultan los elementos.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">🧮 Utilidades avanzadas</p>
+                    <ul class="list-disc pl-6">
+                        <li><code>overflow-hidden</code>, <code>overflow-scroll</code></li>
+                        <li><code>opacity-50</code></li>
+                        <li><code>z-10</code>, <code>z-50</code></li>
+                        <li><code>cursor-pointer</code>, <code>cursor-not-allowed</code></li>
+                        <li><code>animate-bounce</code>, <code>animate-pulse</code></li>
+                    </ul>
+                    <p class="text-gray-300 mt-1">👉 Uso: Mejorar la experiencia visual y el comportamiento dinámico.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="flex justify-center items-center">
+            <a href="/"
+                class="mt-4 bg-sky-400 text-white font-semibold px-4 py-2 rounded-lg hover:bg-sky-400 hover:scale-105 cursor-pointer transition">Volver</a>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-800/90 text-white text-center py-4 mt-10 border-t border-gray-700">
+        <p>© 2025 Ibaceta Agustin, Jaled Facundo, Caballero Dayana</p>
+        <p>CENT 18</p>
+    </footer>
+
+</body>
+</html>

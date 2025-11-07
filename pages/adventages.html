@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico 3 - Tailwind CSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="/img/icon.png">
+</head>
+
+<body class="bg-gray-950 bg-[url('img/background.jpeg')] bg-cover bg-center text-white font-sans">
+
+    <header
+        class="flex flex-col justify-center items-center bg-gray-800/90 border-b border-gray-700 text-white text-center py-6">
+        <h1 class="text-4xl font-bold">Trabajo Práctico N°3 - Prácticas Profesionalizantes 1</h1>
+        <img class="w-72 mt-4" src="/img/logo.png" alt="logo">
+    </header>
+
+    <main class="max-w-6xl mx-auto p-8 space-y-8">
+
+        <section class="bg-gray-800/90 shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-3xl font-bold mb-6 text-center">💎 Ventajas de Tailwind CSS</h2>
+
+            <div class="space-y-6 text-lg leading-relaxed">
+
+                <div>
+                    <p class="font-semibold text-sky-400">💨 Desarrollo rápido</p>
+                    <p>Permite diseñar directamente en el HTML con clases predefinidas, sin tener que escribir CSS adicional.</p>
+                    <p class="text-gray-300">Acelera el proceso de diseño y desarrollo.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">📱 Diseño responsivo fácil</p>
+                    <p>Tailwind usa prefijos (<span class="font-mono text-sky-300">sm:</span>, <span class="font-mono text-sky-300">md:</span>, <span class="font-mono text-sky-300">lg:</span>, etc.) para adaptar los elementos a diferentes tamaños de pantalla sin esfuerzo.</p>
+                    <p class="text-gray-300">Facilita el enfoque mobile-first.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">🎨 Alta personalización</p>
+                    <p>Se puede configurar todo (colores, fuentes, tamaños, espaciados, sombras, etc.) en el archivo <span class="font-mono text-sky-300">tailwind.config.js</span>.</p>
+                    <p class="text-gray-300">Se adapta a cualquier identidad visual o marca.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">🧩 Consistencia visual</p>
+                    <p>El uso de utilidades y componentes garantiza un estilo uniforme en todo el proyecto.</p>
+                    <p class="text-gray-300">Mejora la coherencia del diseño entre diferentes partes del sitio.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">⚙️ Integración con frameworks modernos</p>
+                    <p>Funciona perfectamente con React, Vue, Angular, Next.js, Svelte, entre otros.</p>
+                    <p class="text-gray-300">Ideal para proyectos modernos o aplicaciones de una sola página (SPA).</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">🧱 Reutilización de componentes</p>
+                    <p>Podés definir clases o combinarlas con <span class="font-mono text-sky-300">@apply</span> para crear componentes reutilizables y mantener el código limpio.</p>
+                    <p class="text-gray-300">Reduce duplicación y errores de estilo.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">🚀 Rendimiento optimizado</p>
+                    <p>Elimina automáticamente las clases no utilizadas al generar la versión final (<span class="font-mono text-sky-300">PurgeCSS</span>).</p>
+                    <p class="text-gray-300">Los archivos CSS resultan muy livianos y rápidos de cargar.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">💡 Aprendizaje sencillo</p>
+                    <p>Usa nombres de clases descriptivos y lógicos (<span class="font-mono text-sky-300">text-center</span>, <span class="font-mono text-sky-300">bg-blue-500</span>, <span class="font-mono text-sky-300">p-4</span>, etc.).</p>
+                    <p class="text-gray-300">Se aprende rápido y evita recordar reglas complejas de CSS.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">🧠 Ideal para prototipado</p>
+                    <p>Permite construir maquetas y diseños funcionales en minutos.</p>
+                    <p class="text-gray-300">Perfecto para mostrar ideas o validar interfaces antes de la etapa final.</p>
+                </div>
+                <hr class="border-gray-700">
+
+                <div>
+                    <p class="font-semibold text-sky-400">🤝 Trabajo colaborativo</p>
+                    <p>Al usar las mismas utilidades, todos los miembros del equipo aplican estilos de forma uniforme.</p>
+                    <p class="text-gray-300">Evita conflictos y facilita la lectura del código.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="flex justify-center items-center">
+            <a href="/"
+                class="mt-4 bg-sky-400 text-white font-semibold px-4 py-2 rounded-lg hover:bg-sky-400 hover:scale-105 cursor-pointer transition">Volver</a>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-800/90 text-white text-center py-4 mt-10 border-t border-gray-700">
+        <p>© 2025 Ibaceta Agustin, Jaled Facundo, Caballero Dayana</p>
+         <p>CENT 18</p>
+    </footer>
+
+</body>
+
+</html>

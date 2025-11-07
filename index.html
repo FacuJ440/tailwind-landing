@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico 3 - Tailwind CSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="/img/icon.png">
+</head>
+
+<body class="bg-gray-950 bg-[url('img/background.jpeg')] bg-cover text-white font-sans">
+
+    <header class="flex flex-col justify-center items-center bg-gray-800 border-b border-gray-700 text-white text-center py-6">
+        <h1 class="text-4xl font-bold">Trabajo Práctico N°3 - Practicas Profesionalizantes 1</h1>
+        <img class="w-72" src="/img/logo.png" alt="logo">
+    </header>
+
+    <main class="max-w-7xl mx-auto p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <section class="bg-gray-800 shadow-lg rounded-2xl p-6 hover:shadow-xl transition md:col-span-3">
+            <h2 class="text-2xl font-bold mb-3">¿Qué es Tailwind CSS?</h2>
+            <p>Tailwind CSS es un framework CSS de primera utilidad que permite a los desarrolladores diseñar interfaces
+                directamente en el marcado HTML. Esto se logra mediante el uso de clases predefinidas, eliminando la
+                necesidad de escribir CSS complejo y personalizado.</p>
+            <p>Su enfoque principal es ser modular y flexible, lo que facilita el desarrollo rápido de interfaces
+                responsivas.</p>
+            <p>Ventaja clave: Reduce la necesidad de crear clases personalizadas, agilizando el diseño y mantenimiento
+                del proyecto.</p>
+        </section>
+
+        <section class="bg-gray-800 shadow-lg rounded-2xl p-6 hover:shadow-xl transition md:col-span-2">
+            <h2 class="text-2xl font-bold mb-3">Conceptos clave</h2>
+            <h3 class="text-xl font-semibold">Clases Utilitarias (Utility-First)</h3>
+            <p class="text-lg">Las clases utilitarias son la base de Tailwind. Son clases pequeñas que aplican estilos CSS individuales
+                y específicos (como colores, tamaños, márgenes, padding, tipografía o flexbox).</p>
+            <img src="/img/tailwind-image.jpeg" alt="Tailwindcss" class="mt-4 rounded-lg">
+            <div class="flex items-center justify-center">
+                <a href="/pages/concepts.html" class="mt-4 bg-[#06b6d4] font-semibold text-white px-4 py-2 rounded-lg hover:bg-[#06b6d4] hover:scale-105 cursor-pointer transition">Ver más</a>
+            </div>
+        </section>
+
+        <section class="bg-gray-800 shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold mb-3">Uso práctico</h2>
+            <ul class="list-disc text-lg px-5">
+                <li>
+                    <h3 class="font-semibold">Instalación rápida (CDN)</h3>
+                    <p>Ideal para demostraciones o proyectos pequeños.</p>
+                </li>
+                <li>
+                    <h3 class="font-semibold">Instalación mediante npm</h3>
+                    <p> Recomendada para proyectos profesionales.</p>
+                </li>
+                <li>
+                    <h3 class="font-semibold">Instalación en frameworks populares</h3>
+                    <p>Tailwind CSS se integra fácilmente con los frameworks más usados actualmente.</p>
+                </li>
+            </ul>
+            <img src="/img/icon.png" alt="">
+
+            <div class="flex items-center justify-center">
+                <a href="/pages/practice.html" class="mt-4 bg-[#06b6d4] font-semibold text-white px-4 py-2 rounded-lg hover:bg-[#06b6d4] hover:scale-105 cursor-pointer transition">Ver más</a>
+            </div>
+        </section>
+
+        <section class="bg-gray-800 shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold mb-3">Ventajas de Tailwind CSS</h2>
+            <ul class="list-disc text-lg px-5">
+                <li>
+                    <p>Desarrollo rápido</p>
+                </li>
+                <li>
+                    <p>Responsive sencillo</p>
+                </li>
+                <li>
+                    <p>Alta personalización</p>
+                </li>
+                    <p>Consistencia visual</p>
+                </li>
+                <li>
+                    <p>Integración con frameworks modernos</p>
+                </li>
+                <li>
+                    <p>Reutilización de componentes</p>
+                </li>
+                <li>
+                    <p>Rendimiento optimizado</p>
+                </li>
+                <li>
+                    <p>Aprendizaje sencillo</p>
+                </li>
+                <li>
+                    <p>Ideal para prototipado</p>
+                </li>
+                <li>
+                    <p>Trabajo colaborativo</p>
+                </li>
+            </ul>
+            <img class="rounded-lg mt-4" src="/img/tailwind-utility.jpeg" alt="utility">
+            <div class="flex items-center justify-center">
+                <a href="/pages/adventages.html" class="mt-4 bg-[#06b6d4] font-semibold text-white px-4 py-2 rounded-lg hover:bg-[#06b6d4] hover:scale-105 cursor-pointer transition">Ver más</a>
+            </div>
+        </section>
+
+        <section class="bg-gray-800 shadow-lg rounded-2xl p-6 hover:shadow-xl transition md:col-span-2">
+            <h2 class="text-2xl font-bold mb-3">Clases más importantes</h2>
+            <p class="text-lg">Permite controlar colores, espaciado, tipografía, disposición y efectos de forma rápida y consistente.</p>
+            <img src="/img/layout-image.jpeg" alt="Ejemplo" class="mt-4 rounded-lg">
+            <div class="flex items-center justify-center">
+                <a href="/pages/class.html" class="mt-4 bg-[#06b6d4] font-semibold text-white px-4 py-2 rounded-lg hover:bg-[#06b6d4] hover:scale-105 cursor-pointer transition">Ver más</a>
+            </div>
+        </section>
+
+        <section class="bg-gray-800 shadow-lg rounded-2xl p-6 hover:shadow-xl transition transform md:col-span-3">
+            <h2 class="text-2xl font-bold mb-3">Conclusión</h2>
+            <p class="mb-3 text-lg">Tailwind CSS es una herramienta moderna y potente para desarrollar interfaces web rápidas,
+                responsivas y
+                visualmente consistentes. Su enfoque utility-first permite a los desarrolladores diseñar directamente en
+                el HTML utilizando clases predefinidas, lo que acelera significativamente el proceso de desarrollo y
+                evita la repetición de código CSS tradicional.</p>
+            <p class="text-lg">En conclusión, Tailwind CSS representa una evolución en la forma de escribir estilos en la web: combina
+                velocidad, flexibilidad y coherencia, convirtiéndose en una de las herramientas más eficientes y
+                populares entre los desarrolladores modernos para construir interfaces web profesionales, limpias y
+                personalizables.</p>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-4 mt-10">
+        <p>© 2025 Ibaceta Agustin, Jaled Facundo, Caballero Dayana </p>
+         <p>CENT 18</p>
+    </footer>
+
+</body>
+
+</html>

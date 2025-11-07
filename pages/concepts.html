@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico 3 - Tailwind CSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="/img/icon.png">
+</head>
+
+<body class="bg-gray-950 bg-[url('img/background.jpeg')] bg-cover bg-center text-white font-sans">
+
+    <header
+        class="flex flex-col justify-center items-center bg-gray-800/90 border-b border-gray-700 text-white text-center py-6">
+        <h1 class="text-4xl font-bold">Trabajo Práctico N°3 - Prácticas Profesionalizantes 1</h1>
+        <img class="w-72 mt-4" src="/img/logo.png" alt="logo">
+    </header>
+
+    <main class="max-w-6xl mx-auto p-8 space-y-8">
+
+        <section class="bg-gray-800/90 shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-3xl font-bold mb-3">Conceptos clave</h2>
+            <p class="mb-2 text-lg">Tailwind CSS es un framework CSS de primera utilidad que permite a los
+                desarrolladores diseñar interfaces
+                directamente en el marcado HTML. Esto se logra mediante el uso de clases predefinidas, eliminando la
+                necesidad de escribir CSS complejo y personalizado.</p>
+            <p class="mb-2 text-lg">Su enfoque principal es ser modular y flexible, lo que facilita el desarrollo rápido
+                de interfaces
+                responsivas.</p>
+            <p class="text-lg">Ventaja clave: Reduce la necesidad de crear clases personalizadas, agilizando el diseño y
+                mantenimiento
+                del proyecto.</p>
+        </section>
+
+        <section class="bg-gray-800/90 shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-3xl font-bold mb-4">Clases Utilitarias <span class="text-gray-400">(Utility-First)</span>
+            </h2>
+            <p class="mb-4 text-lg">Las clases utilitarias son la base de <span
+                    class="text-sky-400 font-semibold">Tailwind</span>. Son clases pequeñas que aplican <span
+                    class="italic text-gray-300">estilos CSS individuales y específicos</span> (como colores, tamaños,
+                márgenes, <span class="italic text-gray-300">padding</span>, tipografía o <span
+                    class="italic text-gray-300">flexbox</span>).</p>
+
+            <div class="overflow-x-auto">
+                <table class="w-full border border-gray-700 text-sm md:text-lg">
+                    <thead class="bg-gray-900 text-sky-400">
+                        <tr>
+                            <th class="border border-gray-700 px-4 py-2 text-left">Clase</th>
+                            <th class="border border-gray-700 px-4 py-2 text-left">Función CSS que Reemplaza</th>
+                            <th class="border border-gray-700 px-4 py-2 text-left">Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-900/50">
+                            <td class="border border-gray-700 px-4 py-2 font-mono text-sky-300">bg-blue-500</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-300"><span
+                                    class="text-sky-400">background-color:</span> #3b82f6;</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-200">Color de fondo azul medio.</td>
+                        </tr>
+                        <tr class="hover:bg-gray-900/50">
+                            <td class="border border-gray-700 px-4 py-2 font-mono text-sky-300">text-white</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-300"><span
+                                    class="text-sky-400">color:</span> #ffffff;</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-200">Color de texto blanco.</td>
+                        </tr>
+                        <tr class="hover:bg-gray-900/50">
+                            <td class="border border-gray-700 px-4 py-2 font-mono text-sky-300">px-4</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-300"><span
+                                    class="text-sky-400">padding-left:</span> 1rem; <span
+                                    class="text-sky-400">padding-right:</span> 1rem;</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-200">Relleno horizontal.</td>
+                        </tr>
+                        <tr class="hover:bg-gray-900/50">
+                            <td class="border border-gray-700 px-4 py-2 font-mono text-sky-300">rounded</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-300"><span
+                                    class="text-sky-400">border-radius:</span> 0.25rem;</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-200">Esquinas ligeramente redondeadas.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="bg-gray-800/90 shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-3xl font-bold mb-4">Responsive</h2>
+            <p class="mb-4 text-lg"><span class="text-sky-400 font-semibold ">Tailwind</span> adopta un enfoque <span
+                    class="italic text-gray-300">Mobile-First</span>. Permite <span class="font-semibold">adaptar
+                    diseños a diferentes pantallas</span> usando prefijos de <span
+                    class="italic text-gray-300">breakpoint</span>:</p>
+
+            <div class="overflow-x-auto mb-4">
+                <table class="w-full border border-gray-700 text-sm md:text-lg">
+                    <thead class="bg-gray-900 text-sky-400">
+                        <tr>
+                            <th class="border border-gray-700 px-4 py-2 text-left">Prefijo</th>
+                            <th class="border border-gray-700 px-4 py-2 text-left">Aplicación</th>
+                            <th class="border border-gray-700 px-4 py-2 text-left">Uso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-900/50">
+                            <td class="border border-gray-700 px-4 py-2 text-sky-300 font-mono">sm:</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-300">Estilos a partir de pantallas
+                                pequeñas (640px)</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-200 font-mono">sm:text-lg</td>
+                        </tr>
+                        <tr class="hover:bg-gray-900/50">
+                            <td class="border border-gray-700 px-4 py-2 text-sky-300 font-mono">md:</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-300">Estilos a partir de pantallas
+                                medianas (768px)</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-200 font-mono">md:flex</td>
+                        </tr>
+                        <tr class="hover:bg-gray-900/50">
+                            <td class="border border-gray-700 px-4 py-2 text-sky-300 font-mono">lg:</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-300">Estilos a partir de pantallas
+                                grandes (1024px)</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-200 font-mono">lg:text-xl</td>
+                        </tr>
+                        <tr class="hover:bg-gray-900/50">
+                            <td class="border border-gray-700 px-4 py-2 text-sky-300 font-mono">xl:</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-300">Estilos a partir de pantallas
+                                extragrandes (1280px)</td>
+                            <td class="border border-gray-700 px-4 py-2 text-gray-200 font-mono">xl:w-1/2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-gray-900 p-4 rounded-lg font-mono text-sm text-gray-100">
+                <code>&lt;div class="text-sm md:text-lg lg:text-xl"&gt;Texto adaptativo&lt;/div&gt;</code>
+            </div>
+        </section>
+
+        <section class="bg-gray-800/90 shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-3xl font-bold mb-4">Hover y estados</h2>
+            <p class="mb-4 text-lg"><span class="text-sky-400 font-semibold">Tailwind</span> permite aplicar estilos
+                específicos según el estado interactivo del elemento usando prefijos como <span
+                    class="font-mono text-sky-300">hover:</span>, <span class="font-mono text-sky-300">focus:</span> o
+                <span class="font-mono text-sky-300">active:</span>.
+            </p>
+
+            <div class="bg-gray-900 p-4 rounded-lg font-mono text-sm text-gray-100 mb-4">
+                <code>&lt;button class="bg-blue-500 hover:bg-blue-700"&gt;Botón&lt;/button&gt;</code>
+            </div>
+
+            <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition">Botón</button>
+        </section>
+
+        <section class="bg-gray-800/90 shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-3xl font-bold mb-4">Customización</h2>
+            <p class="mb-2 text-lg">Aunque <span class="text-sky-400 font-semibold">Tailwind</span> proporciona una
+                vasta biblioteca de utilidades, es <span class="font-semibold">completamente personalizable</span>.
+                Permite ampliar colores, fuentes, tamaños y otros estilos mediante la configuración del archivo <span
+                    class="font-mono text-sky-300">tailwind.config.js</span>.</p>
+            <p class="mb-2 text-lg">Esto asegura que el desarrollador pueda adherirse a la identidad visual de cualquier
+                proyecto sin esfuerzo.</p>
+            <p class="text-lg">De esta manera, se mantiene la <span class="font-semibold">identidad visual</span> de un proyecto sin
+                alterar el código base.</p>
+        </section>
+
+        <div class="flex justify-center items-center">
+            <a href="/"
+                class="mt-4 bg-sky-400 text-white font-semibold px-4 py-2 rounded-lg hover:bg-sky-400 hover:scale-105 cursor-pointer transition">Volver</a>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-800/90 text-white text-center py-4 mt-10 border-t border-gray-700">
+        <p>© 2025 Ibaceta Agustin, Jaled Facundo, Caballero Dayana</p>
+         <p>CENT 18</p>
+    </footer>
+
+</body>
+
+</html>
